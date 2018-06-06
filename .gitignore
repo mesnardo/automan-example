@@ -4,6 +4,7 @@ config.json
 
 # Ignore simulation ouputs
 data
+manuscript
 
 # Ignore aeropython package
 aeropython-0.1.1-lite.tar.gz
