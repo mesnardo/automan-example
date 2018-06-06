@@ -33,5 +33,3 @@ Following is a list of suggestions/modifications the author should address:
 6. (p.7, l.53; l.26 in Listing 1) I think the name of the method is `make_output_dir`, instead of `make_output_directory`.
 7. (p.9, l.5) It was not clear to me which folders or directories I should delete to re-run a completed simulation. It would be interesting to add a command-line instruction as an example.
 8. Although this is probably outside the scope for this submission, the developer could use a tool, such as Doxygen or Sphinx, to write the API documentation.
-
-
