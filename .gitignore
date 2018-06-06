@@ -1,5 +1,6 @@
 # Ignore automan configuration file
 config.json
+.pysph_auto
 
 # Ignore simulation ouputs
 data
