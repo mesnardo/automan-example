@@ -1,26 +1,17 @@
 Review the manuscript CiSESI-2018-02-0013 for _Computing in Science & Engineering_:
 _"automan: a Python-based, automation framework for numerical computing"_ (Ramachandran, 2018).
 
-The manuscript describes an open-source Python-based library, called `automan`, to automate scientific computational workflow.
-automan is open-source with a permissive license (BSD 3-clause), hosted on GitHub (developing the code in the open under a version-control system).
-The manuscript was made available on arXiv (https://arxiv.org/abs/1712.04786) before submission to CiSE and serves as API documentation for the Python package.
-The main purpose of automan is to automate a computational research manuscript: it provides a Python framework to assemble and run simulations (on local or distributed machines) and to generate figures from the data produced by those simulations.
-With automan, a user has the possibility to re-create all figures used in a research paper with one command line (as envisioned by \citep{Schwab_2000}).
-The content of the manuscript perfectly fits into the types of submission sought by the RR track of CiSE (\citep{Barba_2017}).
+The manuscript describes an open-source Python-based library, called `automan`, to automate scientific computational workflow. automan is open-source with a permissive license (BSD 3-clause), hosted on GitHub (developing the code in the open under a version-control system). The manuscript was made available on arXiv (https://arxiv.org/abs/1712.04786) before submission to CiSE and serves as API documentation for the Python package.
+
+The main purpose of automan is to automate a computational research manuscript: it provides a Python framework to assemble and run simulations (on local or distributed machines) and to generate figures from the data produced by those simulations. With automan, a user has the possibility to re-create all figures used in a research paper with one command line (as envisioned by \citep{Schwab_2000}). The content of the manuscript perfectly fits into the types of submission sought by the RR track of CiSE (\citep{Barba_2017}).
 
 The author gives an extensive review of already existing frameworks to automate workflows, leading to a clear explanation on the need for a new tool such as automan.
 
-As mentioned in the manuscript, automan has already been used by the author to automate the generation of the figures in an other manuscript (under review) that compares different Smoothed Particle Hydrodynamics schemes (to simulate incompressible fluid flow problems).
-The examples provided in the manuscript are well detailed such that it is easy for the users to adopt automan for their own workflow.
+As mentioned in the manuscript, automan has already been used by the author to automate the generation of the figures in an other manuscript (under review) that compares different Smoothed Particle Hydrodynamics schemes (to simulate incompressible fluid flow problems). The examples provided in the manuscript are well detailed such that it is easy for the users to adopt automan for their own workflow.
 
-As part of the review for the manuscript, I successfully installed automan and created a toy problem to test the features of the package.
-I used an in-house two-dimensional panel-method code (written in Python) to compute and compare the surface pressure coefficient on a series of NACA airfoils are different angles of attack.
-automan is modular enough such that I did not have to re-run the simulations if I was only creating/tweaking the post-processing code to create figures.
-When needed, I was also able to re-run only specific simulations (and not the entire batch).
-I created a public GitHub repository (https://github.com/mesnardo/automan-example) that contains the input files and Python scripts used to test automan.
+As part of the review for the manuscript, I successfully installed automan and created a toy problem to test the features of the package. I used an in-house two-dimensional panel-method code (written in Python) to compute and compare the surface pressure coefficient on a series of NACA airfoils are different angles of attack. automan is modular enough such that I did not have to re-run the simulations if I was only creating/tweaking the post-processing code to create figures. When needed, I was also able to re-run only specific simulations (and not the entire batch). I created a public GitHub repository (https://github.com/mesnardo/automan-example) that contains the input files and Python scripts used to test automan.
 
-Finally, I would like to point out that automan helps users to make their computational workflow reproducible, but does not guarantee numerical reproducibility of the results.
-As mentioned by the author, automan does not capture the working environment (software versions, dependencies, etc.)
+Finally, I would like to point out that automan helps users to make their computational workflow reproducible, but does not guarantee numerical reproducibility of the results. As mentioned by the author, automan does not capture the working environment (software versions, dependencies, etc.)
 
 The manuscript should be **accepted after minor revisions**.
 Following is a list of suggestions/modifications the author should address:
