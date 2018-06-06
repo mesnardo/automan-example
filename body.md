@@ -5,7 +5,7 @@ The manuscript describes an open-source Python-based library, called `automan`, 
 automan is open-source with a permissive license (BSD 3-clause), hosted on GitHub (developing the code in the open under a version-control system).
 The manuscript was made available on arXiv (https://arxiv.org/abs/1712.04786) before submission to CiSE and serves as API documentation for the Python package.
 The main purpose of automan is to automate a computational research manuscript: it provides a Python framework to assemble and run simulations (on local or distributed machines) and to generate figures from the data produced by those simulations.
-With automan, a user has the possibility to re-create all figures used in a research paper with one command line (as envisioned by \citep{Schwab_2000} Schwab et al., 2000).
+With automan, a user has the possibility to re-create all figures used in a research paper with one command line (as envisioned by \citep{Schwab_2000}).
 The content of the manuscript perfectly fits into the types of submission sought by the RR track of CiSE (\citep{Barba_2017}).
 
 The author gives an extensive review of already existing frameworks to automate workflows, leading to a clear explanation on the need for a new tool such as automan.
