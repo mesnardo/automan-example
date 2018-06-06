@@ -25,7 +25,7 @@ As mentioned by the author, automan does not capture the working environment (so
 The manuscript should be **accepted after minor revisions**.
 Following is a list of suggestions/modifications the author should address:
 
-1. I think the author should favor the term "reproducibility" instead of "repeatability". The meanings of "reproducibility" and "replication" are clearly defined in the highly cited paper from Peng (2011)\citet{Peng_2011}. To add more clarity, the author could recall the definition the "reproducibility" and "reproducible workflow" in the introduction section.
+1. I think the author should favor the term "reproducibility" instead of "repeatability". The meanings of "reproducibility" and "replication" are clearly defined in the highly cited paper from \citet{Peng_2011}. To add more clarity, the author could recall the definition the "reproducibility" and "reproducible workflow" in the introduction section.
 2. As mentioned by the author in the discussion section, automan is a "very young package". Thus, it is very likely that the core of the package and/or the API will change in the future. Therefore, the author should mention the release version of automan on which the manuscript is based.
 3. (p.1, l.47) Could the author add in the introduction the license under which the code is being developed and released (BSD 3-clause license)?
 4. (p.3, l.31) The term "exactly similar" is too strong to describe a re-implementation of a feature that already exists in luigi. Maybe the author could remove the word "exactly".
