@@ -15,7 +15,7 @@ parser.add_argument('--version', '-v',
                     action='version',
                     version='%(prog)s (version 0.1)')
 parser.add_argument('--input', dest='input',
-                    type=str, required=True,
+                    type=str, default=None,
                     help='Path of the file with airfoil coordinates.')
 parser.add_argument('--skiprows', dest='skiprows',
                     type=int, default=0,
@@ -23,6 +23,9 @@ parser.add_argument('--skiprows', dest='skiprows',
 parser.add_argument('--n', '-n', dest='n',
                     type=int, default=40,
                     help='Number of panels to discretize airfoil.')
+parser.add_argument('--naca', dest='naca_digits',
+                    type=str, default=None,
+                    help='The 4 digits of the NACA foil to be generated.')
 parser.add_argument('--speed', dest='speed',
                     type=float, default=1.0,
                     help='Freestream speed.')
@@ -39,7 +42,11 @@ parser.add_argument('--output', dest='output',
 args = parser.parse_args()
 
 # Create the airfoil.
-foil = aeropython.Airfoil(filepath=args.input, skiprows=args.skiprows)
+if args.naca_digits:
+  x, y = aeropython.naca_generator(args.naca_digits, num=args.n, cusp=True)
+  foil = aeropython.Airfoil(x=x, y=y)
+else:
+  foil = aeropython.Airfoil(filepath=args.input, skiprows=args.skiprows)
 # Set the freestream conditions.
 freestream = aeropython.Freestream(speed=args.speed, alpha=args.alpha)
 foil.set_freestream(freestream)
@@ -56,4 +63,4 @@ if not os.path.isdir(args.output):
 filepath = os.path.join(args.output, 'cp.txt')
 with open(filepath, 'w') as outfile:
   for p in foil.panels:
-    outfile.write('{}\t{}\t{}\n'.format(p.loc, p.xc, p.cp))
+    outfile.write(f'{p.loc}\t{p.xc}\t{p.yc}\t{p.cp}\n')
