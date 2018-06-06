@@ -1,0 +1,5 @@
+# Ignore automan configuration file
+config.json
+
+# Ignore simulation ouputs
+data
