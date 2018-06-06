@@ -4,6 +4,8 @@ Example using the automation framework `automan`.
 
 import os
 import pandas
+import matplotlib
+matplotlib.use('Agg')
 from matplotlib import pyplot
 from automan.api import Problem, Simulation, Automator
 
