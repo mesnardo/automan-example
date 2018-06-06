@@ -35,7 +35,3 @@ Following is a list of suggestions/modifications the author should address:
 8. Although this is probably outside the scope for this submission, the developer could use a tool, such as Doxygen or Sphinx, to write the API documentation.
 
 
-**References:**
-- Barba, L. A., & Thiruvathukal, G. K. (2017). Reproducible Research for Computing in Science & Engineering. Computing in Science & Engineering, 19(6), 85-87.
-- Peng, R. D. (2011). Reproducible research in computational science. Science, 334(6060), 1226-1227.
-- Schwab, M., Karrenbach, M., & Claerbout, J. (2000). Making scientific computations reproducible. Computing in Science & Engineering, 2(6), 61-67.
